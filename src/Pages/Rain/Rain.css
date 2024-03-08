@@ -1,0 +1,40 @@
+i {
+    position: fixed;
+    height: 250px;
+    background: linear-gradient(transparent, #fff);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: inline-block;
+    animation: animate 5s linear infinite;
+}
+
+i:nth-child(3n+1){
+
+    background: linear-gradient(transparent, #111);
+
+}
+
+i:nth-child(3n+2){
+
+    background: linear-gradient(transparent, #222);
+    
+}
+
+i:nth-child(3n+3){
+
+    background: linear-gradient(transparent, #333);
+    
+}
+
+@keyframes animate {
+    0%{
+        transform:  rotate(20deg) translateY(-400px);
+    }
+
+    100%{
+        transform: rotate(20deg) translateY(calc(100vh + 350px));
+    }
+
+
+
+}

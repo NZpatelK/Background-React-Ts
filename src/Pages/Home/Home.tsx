@@ -1,16 +1,14 @@
 import React from 'react';
 import Rain from '../Rain/Rain';
 import './Home.css';
+import Swirl from '../Swirl/Swirl';
 // import { useNavigate } from 'react-router-dom';
 
 const Home: React.FC = () => {
-    // const nav = useNavigate();
     return (
         <div>
-            {/* <h1>Welcome to the Homepage!</h1>
-            <p>This is the content of the homepage.11</p>
-            <div onClick={() => nav('rain')}>Rain</div> */}
             <Rain />
+            {/* <Swirl /> */}
             <section>
                 <h1>Section 1</h1>
                 <p>This is the content of section 1.</p>

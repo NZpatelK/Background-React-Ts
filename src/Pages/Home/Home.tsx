@@ -1,14 +1,15 @@
 import React from 'react';
-import Rain from '../Rain/Rain';
+import Rain from '../../Components/Rain/Rain';
 import './Home.css';
-import Swirl from '../Swirl/Swirl';
-// import { useNavigate } from 'react-router-dom';
+import Swirl from '../../Components/Swirl/Swirl';
+import Navbar from '../../Components/Navbar/Navbar';
 
 const Home: React.FC = () => {
     return (
         <div>
             {/* <Rain /> */}
             <Swirl />
+            <Navbar/>
             <section>
                 <h1>Section 1</h1>
                 <p>This is the content of section 1.</p>

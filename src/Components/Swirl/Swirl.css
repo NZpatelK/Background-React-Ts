@@ -15,8 +15,8 @@
 
 .circle {
     position: absolute;
-    background: #2c4ee5;
-    box-shadow: 0 0 10px #0431fa; /* Adjust the box shadow properties as desired */
+    background: #ababab;
+    box-shadow: 0 0 10px #747474; /* Adjust the box shadow properties as desired */
     border-radius: 50%;
     width: 10px; /* Adjust the size of the circle */
     height: 10px; /* Adjust the size of the circle */

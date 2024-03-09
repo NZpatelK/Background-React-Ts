@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-// import './App.css';
+import './Swirl.css';
 
 const Swirl: React.FC = () => {
     const swirlRef = useRef<HTMLDivElement>(null);

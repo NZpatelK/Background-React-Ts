@@ -7,8 +7,8 @@ import Swirl from '../Swirl/Swirl';
 const Home: React.FC = () => {
     return (
         <div>
-            <Rain />
-            {/* <Swirl /> */}
+            {/* <Rain /> */}
+            <Swirl />
             <section>
                 <h1>Section 1</h1>
                 <p>This is the content of section 1.</p>

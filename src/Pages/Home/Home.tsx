@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Rain from '../../Components/Rain/Rain';
 import './Home.css';
 import Swirl from '../../Components/Swirl/Swirl';
 import Navbar from '../../Components/Navbar/Navbar';
 
 const Home: React.FC = () => {
+    const [selection, setSelection] = useState(1);
     return (
         <div>
-            {/* <Rain /> */}
-            <Swirl />
-            <Navbar/>
+           {selection === 0 ? <Rain /> : null}
+           {selection === 1 ? <Swirl /> : null}
+            <Navbar selectionValue={(value) => setSelection(value)}/>
             <section>
-                <h1>Section 1</h1>
+                <h1>Section 1 </h1>
                 <p>This is the content of section 1.</p>
             </section>
             <section>

@@ -1,14 +1,16 @@
 import React from 'react';
 import './Navbar.css';
 
-const Navbar: React.FC = () => {
+interface NavbarProps {
+    selectionValue: (value: number) => void;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ selectionValue }) => {
     return (
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li onClick={() => selectionValue(0)}>Rain</li>
+                <li onClick={() => selectionValue(1)}>Swirl</li>
             </ul>
         </nav>
     );

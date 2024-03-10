@@ -5,10 +5,10 @@ import Swirl from '../../Components/Swirl/Swirl';
 import Navbar from '../../Components/Navbar/Navbar';
 
 const Home: React.FC = () => {
-    const [selection, setSelection] = useState(1);
+    const [selection, setSelection] = useState(0);
     return (
         <div>
-           {selection === 0 ? <Rain /> : null}
+           <Rain switchAnimation={selection === 0 ? true : false} />
            {selection === 1 ? <Swirl /> : null}
             <Navbar selectionValue={(value) => setSelection(value)}/>
             <section>
